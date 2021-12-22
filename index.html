@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="icon" href="./image/devchallenges.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+   <div class="shubham">
+    <div class="container">
+        <div class="card">
+            <h1>Checkout</h1>
+        </div>
+        <div class="card1">
+            <div class="img1">
+                <img src="./image/photo1.png" alt="">
+                <div class="word">
+                    <p>vintangae Backbag<br>$54.99 $94.99</p>
+                    <input id=demoInput type=number min=0 max=110>
+                    <button class="add" onclick="increment()">+</button>
+                    <button class="sub" onclick="decrement()">-</button>
+                </div>
+            </div>
+            <div class="img2">
+                <img src="./image/photo2.png" alt="">
+                <div class="word">
+                    <p>Levi Shoes <br>$74.99 $124.99</p>
+                    <input type="number" id="demoInput1" >
+                    <button class="add1" onclick="increase()">+</button>
+                    <button class="sub1" onclick="decrease()">-</button>
+                </div>
+            </div>
+            <hr>
+            <div class="bottom">
+                <p>shopping</p>
+                <div class="text">
+                    <p>$19</p>
+                </div>
+            </div>
+            <hr>
+            <div class="bottom">
+                <p>Total</p>
+                <div class="text">
+                    <p>$148.98</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====================form=================== -->
+
+        <div class="form">
+            <h3>Contact information</h3><br>
+            <label for="Emali">E-mail</label><br>
+            <input type="email" class="inpt" placeholder="Enter Your Email..."><br>
+            <!-- //email symbol -->
+            <svg class="email" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path
+                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+            </svg>
+            <!-- //email symbol -->
+            <label for="Phone">Phone</label><br>
+            <input class="inpt" type="number" placeholder="Enter Your Phone...."><br>
+            <!--phone symbol-->
+            <svg class="phone" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+            </svg>
+
+            <h3>Shipping Address</h3>
+            <label for="FullName">FullName</label><br>
+            <input class="inpt" type="text" placeholder="Enter Full name" name="" id=""><br>
+            <!--name symbol-->
+            <svg class="name" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+            </svg>
+            <label for="address">Address</label><br>
+            <input class="inpt" type="text" placeholder="Enter Your Address" name="" id=""><br>
+            <!--home symbol-->
+            <svg class="home" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                <path
+                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
+            </svg>
+            <label for="City">City</label><br>
+            <input class="inpt" type="text" placeholder="Enter your City" name="" id=""><br>
+            <!--city symbol-->
+            <i id="city" class="fas fa-city"></i>
+            <!-- =========label=========== -->
+            <div class="lab">
+                <label for="county">Country</label><br>
+                <label for="Code">Postral Code</label><br>
+            </div>
+            <!-- //input -->
+            <div class="county">
+                <input class="inpt1" type="text" placeholder="Your country" name="" id=""><br>
+                <!--earth symbol-->
+                <i class="fa fa-globe"></i>
+                <input class="inpt2" type="text" placeholder="Pincode" name="" id=""><br>
+                <!--postal symbol-->
+                <svg class="postal" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-pencil-square" viewBox="0 0 16 16">
+                    <path
+                        d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                    <path fill-rule="evenodd"
+                        d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                </svg>
+            </div>
+            <div class="check">
+                <pre> <input type="checkbox" class="checkbox"><p>Save this information for the next time</p></pre>
+                <!-- <p>Save this information for the next time</p> -->
+            </div>
+            <button class=btn>Continue</button>
+        </div>
+    </div>
+   </div>
+    <script>
+        function increment() {
+            document.getElementById('demoInput').stepUp();
+        }
+        function decrement() {
+            document.getElementById('demoInput').stepDown();
+        }
+        //second button
+        function increase() {
+            document.getElementById('demoInput1').stepUp();
+        }
+        function decreases() {
+            document.getElementById('demoInput1').stepDown();
+        }
+    </script>
+
+</body>
+
+</html>
